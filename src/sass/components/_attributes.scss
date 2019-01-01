@@ -1,0 +1,130 @@
+.attributes{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background-color: $color-white;
+    background-image: $paper-texture;
+
+    border-radius: $box-corners;
+    box-shadow: $shadow-main;
+
+    &-strength{
+        animation-name: shift-from-red;
+        @include color-animation-to(10s);
+
+        &:hover{
+            animation-name: shift-to-red;
+            @include color-animation-to(1.2s);
+        }
+    }
+
+    &-dexterity{
+        animation-name: shift-from-yellow;
+        @include color-animation-to(10s);
+
+        &:hover{
+            animation-name: shift-to-yellow;
+            @include color-animation-to(1.2s);
+        }
+    }
+
+    &-constitution{
+        animation-name: shift-from-orange;
+        @include color-animation-to(10s);
+
+        &:hover{
+            animation-name: shift-to-orange;
+            @include color-animation-to(1.2s);
+        }
+    }
+
+    &-intelligence{
+        animation-name: shift-from-blue;
+        @include color-animation-to(10s);
+
+        &:hover{
+            animation-name: shift-to-blue;
+            @include color-animation-to(1.2s);
+        }
+    }
+
+    &-wisdom{
+        animation-name: shift-from-purple;
+        @include color-animation-to(10s);
+
+        &:hover{
+            animation-name: shift-to-purple;
+            @include color-animation-to(1.2s);
+        }
+    }
+
+    &-charisma{
+        animation-name: shift-from-pink;
+        @include color-animation-to(10s);
+
+        &:hover{
+            animation-name: shift-to-pink;
+            @include color-animation-to(1.2s);
+        }
+    }
+
+    &-strength,
+    &-dexterity,
+    &-constitution,
+    &-intelligence,
+    &-wisdom,
+    &-charisma{
+        display: inline-block;
+
+        text-align: center;
+
+        margin-left: $icon-margin-default;
+        margin-right: $icon-margin-default;
+
+        color: $color-ink-gray;
+        width: $icon-wrapper-default;
+    }
+
+    &-icon-wrapper{
+        margin-top: 3.4rem;
+    }
+
+    &-text-wrapper{
+        margin-top: 1rem;
+    }
+
+    &-text-short{
+        display: inline-block;
+
+        text-align: center;
+        font-size: 1.6rem;
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        color: $color-ink-gray;
+
+        width: $icon-wrapper-default;
+
+        margin-left: $icon-margin-default;
+        margin-right: $icon-margin-default;
+    }
+
+    &-score-wrapper{
+        margin-top: 2rem;
+    }
+
+    &-score{
+        display: inline-block;
+
+        text-align: center;
+        font-size: 1.6rem;
+        font-family: "Lato", sans-serif;
+        color: $color-ink-gray;
+
+        width: $icon-wrapper-default;
+
+        margin-left: $icon-margin-default;
+        margin-right: $icon-margin-default;
+    }
+}

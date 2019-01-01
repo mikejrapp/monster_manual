@@ -1,0 +1,22 @@
+.subject-card{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  background-color: $color-light-gray;
+
+  border-radius: $box-corners;
+  box-shadow: $shadow-main;
+
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr;
+  grid-gap: 1rem;
+
+  animation-name: slide-in-from-top;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+}

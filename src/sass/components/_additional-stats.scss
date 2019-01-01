@@ -1,0 +1,106 @@
+.additional-stats{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    background-color: $color-white;
+    background-image: $paper-texture;
+
+    border-radius: $box-corners;
+    box-shadow: $shadow-main;
+
+    display: grid;
+
+    padding: 1rem 0 0 0;
+
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    &-actions-banner,
+    &-special-banner{
+        background-image: linear-gradient(to bottom right, rgba($color-deep-red, .8), rgba($color-middle-red, .8)), url("../roughcloth/roughcloth.png");
+
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        font-size: 1.6rem;
+        letter-spacing: .2rem;
+        color: $color-white;
+
+        margin-top: 1rem;
+        padding: 1rem;
+
+        transform: skewY(-2deg);
+
+        box-shadow: $shadow-main;
+
+        & > h2{
+            transform: skewY(2deg);
+        }
+    }
+
+    &-text-wrapper,
+    &-special-text-wrapper{
+        margin-top: 2rem;
+        text-align: left;
+
+        color: $color-ink-gray;
+
+        padding: 2rem;
+
+        & > h3{
+            font-family: "Yanone Kaffeesatz", sans-serif;
+            letter-spacing: .2rem;
+            font-size: 2rem;
+        }
+
+        & > p{
+            margin-top: 1rem;
+            margin-bottom: 1.6rem;
+            font-family: "Lato", sans-serif;
+            font-size: 1.4rem;
+        }
+    }
+
+    /*&-left-column{
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    &-left-wrapper{
+
+      & > h3{
+        background-image: linear-gradient(to bottom right, rgba($color-deep-red, .8), rgba($color-middle-red, .8));
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        font-size: 2rem;
+        text-align: left;
+        color: $color-white;
+
+        padding: .6rem .6rem .6rem 2rem;
+      }
+
+      & > p{
+        font-family: "Lato", sans-serif;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: left;
+        color: $color-ink-gray;
+
+        margin: 1.2rem 0 1rem 2rem;
+
+        & > span{
+          &:not(:first-child){
+            margin-left: 1.8rem;
+          }
+        }
+      }
+    }*/
+
+}
+
+//background-image: linear-gradient(to bottom right, rgba($color-deep-red, .8), rgba($color-middle-red, .8));

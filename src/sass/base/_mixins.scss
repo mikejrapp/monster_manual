@@ -1,0 +1,13 @@
+@mixin color-shift-to($base-color, $to-color){
+    from{
+        color: $base-color;
+    }
+    to{
+        color: $to-color;
+    }
+}
+
+@mixin color-animation-to($duration){
+    animation-fill-mode: forwards;
+    animation-duration: $duration;
+}

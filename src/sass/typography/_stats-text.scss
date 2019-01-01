@@ -1,0 +1,31 @@
+.base-stats-heading{
+        text-align: center;
+
+        margin-top: 3.2rem;
+        padding: 3rem;
+
+        background-image: linear-gradient(to bottom right, rgba($color-deep-red, .8), rgba($color-middle-red, .8)), url("../roughcloth/roughcloth.png");
+
+        transform: skewY(-5deg);
+        color: $color-white;
+
+        box-shadow: $shadow-main;
+
+        backface-visibility: hidden;
+        &-header{
+                font-family: "Yanone Kaffeesatz", sans-serif;
+                font-size: 3rem;
+                text-transform: uppercase;
+                letter-spacing: .2rem;
+
+                margin-bottom: .5rem;
+
+                transform: skewY(5deg);
+        }
+
+        &-subtext{
+                font-family: "Lato", sans-serif;
+                font-size: 1.4rem;
+                transform: skewY(5deg);
+        }
+}

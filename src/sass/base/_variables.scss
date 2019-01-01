@@ -1,0 +1,40 @@
+//-------------
+// Colors
+//-------------
+
+//Neutrals
+$color-white: #fff;
+$color-black: #000;
+$color-light-gray: #c9ccc1;
+$color-ink-gray: #666668;
+
+//Non-Neutrals
+$color-deep-red: #9b0000;
+$color-middle-red: #bc0000;
+
+$color-middle-pink: #8e1951;
+
+$color-middle-orange: #c1671d;
+
+$color-gold-yellow: #c4a74a;
+
+$color-middle-blue: #2e5491;
+
+$color-middle-purple: #4e198e;
+
+
+//-----------------
+// Common Settings
+//-----------------
+
+$box-corners: .8rem;
+$shadow-main: 0 .2rem .8rem rgba($color-black, .4);
+
+$paper-texture: linear-gradient(to right, rgba(#d1cfaf, .4), rgba(#efedce, .4)), url("../lightpaperfibers/lightpaperfibers.png");
+
+//-----------------
+// Spacing
+//-----------------
+
+$icon-wrapper-default: 3.8rem;
+$icon-margin-default: 1.8rem;//3.2rem;

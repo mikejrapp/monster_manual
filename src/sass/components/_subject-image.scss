@@ -1,0 +1,15 @@
+.subject-image{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  background-color: $color-white;
+
+  border-radius: $box-corners;
+  box-shadow: $shadow-main;
+
+  background-image: url("https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/165/1000/1000/636252760084366499.jpeg");
+  background-size: cover;
+  background-position: top;
+}

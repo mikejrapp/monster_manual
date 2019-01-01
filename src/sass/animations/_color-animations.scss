@@ -1,0 +1,50 @@
+//had to add these because it does not appear that keyframe names can be dynamically allocated at this point.
+//if that changes, this should be refactored.
+
+@keyframes shift-to-red {
+    @include color-shift-to($color-ink-gray, $color-deep-red);
+}
+
+@keyframes shift-from-red{
+    @include color-shift-to($color-deep-red, $color-ink-gray);
+}
+
+@keyframes shift-to-blue{
+    @include color-shift-to($color-ink-gray, $color-middle-blue);
+}
+
+@keyframes shift-from-blue{
+    @include color-shift-to($color-middle-blue, $color-ink-gray);
+}
+
+@keyframes shift-to-yellow{
+    @include color-shift-to($color-ink-gray, $color-gold-yellow);
+}
+
+@keyframes shift-from-yellow{
+    @include color-shift-to($color-gold-yellow, $color-ink-gray);
+}
+
+@keyframes shift-to-orange{
+    @include color-shift-to($color-ink-gray, $color-middle-orange);
+}
+
+@keyframes shift-from-orange{
+    @include color-shift-to($color-middle-orange, $color-ink-gray);
+}
+
+@keyframes shift-to-purple{
+    @include color-shift-to($color-ink-gray, $color-middle-purple);
+}
+
+@keyframes shift-from-purple{
+    @include color-shift-to($color-middle-purple, $color-ink-gray);
+}
+
+@keyframes shift-to-pink{
+    @include color-shift-to($color-ink-gray, $color-middle-pink);
+}
+
+@keyframes shift-from-pink{
+    @include color-shift-to($color-middle-pink, $color-ink-gray);
+}
