@@ -64,6 +64,48 @@ html {
   background-color: #c9ccc1;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
+  text-align: left;
+  padding: 1rem;
+}
+.action-block-search-title {
+  position: absolute;
+  padding: 2.2rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #666668;
+}
+
+.action-wrapper {
+  background-image: linear-gradient(to right, rgba(209, 207, 175, 0.4), rgba(239, 237, 206, 0.4)), url("../lightpaperfibers/lightpaperfibers.png");
+  height: 100%;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.search {
+  height: 3rem;
+  width: 60%;
+  margin: 6rem 0 0 2rem;
+  border: none;
+  border-radius: 0.8rem;
+  transition: all 0.2s;
+  padding: 1rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  color: #666668;
+  position: absolute;
+}
+.search:hover {
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+.search:focus {
+  outline: none;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
 }
 
 .subject-image {
@@ -112,9 +154,6 @@ html {
   grid-row-start: 1;
   grid-row-end: 4;
   background-color: transparent;
-  background-image: linear-gradient(to right, rgba(209, 207, 175, 0.4), rgba(239, 237, 206, 0.4)), url("../lightpaperfibers/lightpaperfibers.png");
-  border-radius: 0.8rem;
-  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
 }
 .base-stats-icons {
   margin-top: 5rem;
@@ -131,12 +170,25 @@ html {
   width: 100%;
   perspective: 100rem;
 }
-.base-stats-card-side {
-  position: absolute;
-  height: 100%;
+.base-stats-card-inner {
+  position: relative;
   width: 100%;
-  backface-visibility: hidden;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
+}
+.base-stats-card:hover .base-stats-card-inner {
+  transform: rotateY(180deg);
+}
+.base-stats-card-front, .base-stats-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: linear-gradient(to right, rgba(209, 207, 175, 0.4), rgba(239, 237, 206, 0.4)), url("../lightpaperfibers/lightpaperfibers.png");
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
 }
 .base-stats-card-front {
   height: 100%;
@@ -145,11 +197,40 @@ html {
   height: 100%;
   transform: rotateY(180deg);
 }
-.base-stats-card:hover .base-stats-card-front {
-  transform: rotateY(180deg);
+.base-stats-title-banner {
+  background-color: #bc0000;
+  height: 4rem;
+  width: 85%;
+  margin-top: 2rem;
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+  text-align: left;
 }
-.base-stats-card:hover .base-stats-card-back {
-  transform: rotateY(0deg);
+.base-stats-title {
+  font-size: 1.8rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  padding: 1rem;
+}
+.base-stats-wrapper {
+  width: 85%;
+  margin: 0;
+  text-align: left;
+  padding-left: 2rem;
+}
+.base-stats-throws {
+  display: inline-block;
+  margin: 1rem;
+  font-size: 1.4rem;
+  font-family: "Lato", sans-serif;
+  color: #666668;
+}
+.base-stats-resistances {
+  margin: 1rem;
+  font-size: 1.4rem;
+  font-family: "Lato", sans-serif;
+  color: #666668;
 }
 
 .armor-class:hover {

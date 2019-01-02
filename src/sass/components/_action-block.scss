@@ -8,4 +8,62 @@
 
   border-radius: $box-corners;
   box-shadow: $shadow-main;
+
+  text-align: left;
+  padding: 1rem;
+
+
+
+  &-search-title{
+    position: absolute;
+    padding: 2.2rem;
+
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: $color-ink-gray;
+  }
+
+}
+
+.action-wrapper{
+  background-image: $paper-texture;
+  height: 100%;
+
+  border-radius: $box-corners;
+  box-shadow: $shadow-main;
+
+  position: relative;
+}
+
+.search{
+  height: 3rem;
+  width: 60%;
+
+  margin: 6rem 0 0 2rem;
+
+  border: none;
+  border-radius: $box-corners;
+
+  transition: all .2s;
+
+  padding: 1rem;
+
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  color: $color-ink-gray;
+
+  position: absolute;
+
+  &:hover{
+    box-shadow: $shadow-main;
+    transform: scale(1.01);
+  }
+
+  &:focus{
+    outline: none;
+    box-shadow: $shadow-main;
+    transform: scale(1.01);
+  }
 }
