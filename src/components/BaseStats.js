@@ -1,6 +1,98 @@
 import React from "react";
 
 const BaseStats = (props) =>{
+
+    const checkSkills = () => {
+        if(props.skills.length > 0){
+            return(
+                <div>
+                    <div className="base-stats-title-banner">
+                        <h4 className="base-stats-title">Skills</h4>
+                    </div>
+                    <div className="base-stats-wrapper">
+                        {props.skills}
+                    </div>
+                </div>
+            )
+        }
+    };
+
+    const checkDamageResistance = () => {
+        if(props.subject.damageResistances.length > 0){
+            return(
+                <div>
+                    <div className="base-stats-title-banner">
+                        <h4 className="base-stats-title">Damage Resistances</h4>
+                    </div>
+                    <div className="base-stats-wrapper">
+                        <p className="base-stats-resistances">
+                            {props.subject.damageResistances.map((resistance) =>
+                                <span className="base-stats-resistances-span">{resistance}</span>
+                            )}
+                        </p>
+                    </div>
+                </div>
+            )
+        }
+    };
+
+    const checkDamageImmunity = () => {
+        if(props.subject.damageImmunities.length > 0){
+            return(
+                <div>
+                    <div className="base-stats-title-banner">
+                        <h4 className="base-stats-title">Damage Immunities</h4>
+                    </div>
+                    <div className="base-stats-wrapper">
+                        <p className="base-stats-resistances">
+                            {props.subject.damageImmunities.map( (immunity) =>
+                                <span className="base-stats-resistances-span">{immunity}</span>
+                            )}
+                        </p>
+                    </div>
+                </div>
+            )
+        }
+    };
+
+    const checkConditionImmunity = () => {
+        if(props.subject.conditionImmunities.length > 0){
+            return(
+                <div>
+                    <div className="base-stats-title-banner">
+                        <h4 className="base-stats-title">Condition Immunities</h4>
+                    </div>
+                    <div className="base-stats-wrapper">
+                        <p className="base-stats-resistances">
+                            {props.subject.conditionImmunities.map((immunity) =>
+                                <span className="base-stats-resistances-span">{immunity}</span>
+                            )}
+                        </p>
+                    </div>
+                </div>
+            )
+        }
+    };
+
+    const checkSense = () => {
+        if(props.subject.senses.length > 0){
+            return(
+                <div>
+                    <div className="base-stats-title-banner">
+                        <h4 className="base-stats-title">Senses</h4>
+                    </div>
+                    <div className="base-stats-wrapper">
+                        <p className="base-stats-resistances">
+                            {props.subject.senses.map((sense) =>
+                                <span className="base-stats-resistances-span">{sense}</span>
+                            )}
+                        </p>
+                    </div>
+                </div>
+            )
+        }
+    };
+
     return (
         <div className={"base-stats"}>
 
@@ -36,56 +128,15 @@ const BaseStats = (props) =>{
                             {props.baseStats}
                         </div>
 
-                        <div className="base-stats-title-banner">
-                            <h4 className="base-stats-title">Skills</h4>
-                        </div>
-                        <div className="base-stats-wrapper">
-                            {props.skills}
-                        </div>
+                        {checkSkills()}
 
-                        <div className="base-stats-title-banner">
-                            <h4 className="base-stats-title">Damage Resistances</h4>
-                        </div>
-                        <div className="base-stats-wrapper">
-                            <p className="base-stats-resistances">
-                                {props.subject.damageResistances.map((resistance) =>
-                                    <span className="base-stats-resistances-span">{resistance}</span>
-                                )}
-                            </p>
-                        </div>
+                        {checkDamageResistance()}
 
-                        <div className="base-stats-title-banner">
-                            <h4 className="base-stats-title">Damage Immunities</h4>
-                        </div>
-                        <div className="base-stats-wrapper">
-                            <p className="base-stats-resistances">
-                                {props.subject.damageImmunities.map( (immunity) =>
-                                    <span className="base-stats-resistances-span">{immunity}</span>
-                                )}
-                            </p>
-                        </div>
+                        {checkDamageImmunity()}
 
-                        <div className="base-stats-title-banner">
-                            <h4 className="base-stats-title">Condition Immunities</h4>
-                        </div>
-                        <div className="base-stats-wrapper">
-                            <p className="base-stats-resistances">
-                                {props.subject.conditionImmunities.map((immunity) =>
-                                    <span className="base-stats-resistances-span">{immunity}</span>
-                                )}
-                            </p>
-                        </div>
+                        {checkConditionImmunity()}
 
-                        <div className="base-stats-title-banner">
-                            <h4 className="base-stats-title">Senses</h4>
-                        </div>
-                        <div className="base-stats-wrapper">
-                            <p className="base-stats-resistances">
-                                {props.subject.senses.map((sense) =>
-                                    <span className="base-stats-resistances-span">{sense}</span>
-                                )}
-                            </p>
-                        </div>
+                        {checkSense()}
 
                     </div>
                 </div>

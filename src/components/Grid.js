@@ -100,7 +100,7 @@ class Grid extends React.Component{
                     }
                 ],
                 specialAbilities: [
-                    
+
                 ]
             },
         };
