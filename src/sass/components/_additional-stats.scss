@@ -20,7 +20,8 @@
     }
 
     &-actions-banner,
-    &-special-banner{
+    &-special-banner,
+    &-legendary-banner{
         background-image: linear-gradient(to bottom right, rgba($color-deep-red, .8), rgba($color-middle-red, .8)), url("../roughcloth/roughcloth.png");
 
         font-family: "Yanone Kaffeesatz", sans-serif;
@@ -28,7 +29,8 @@
         letter-spacing: .2rem;
         color: $color-white;
 
-        margin-top: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         padding: 1rem;
 
         transform: skewY(-2deg);
@@ -41,12 +43,13 @@
     }
 
     &-text-wrapper,
-    &-special-text-wrapper{
-        margin-top: 2rem;
+    &-special-text-wrapper,
+    &-legendary-text-wrapper{
         text-align: left;
 
         color: $color-ink-gray;
 
+        margin-bottom: -3rem;
         padding: 2rem;
 
         & > h3{

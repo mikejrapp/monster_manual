@@ -10,7 +10,7 @@ html {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 4fr;
-  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 3fr;
   grid-gap: 1.5rem;
   height: 80vh;
   width: 90vw;
@@ -432,32 +432,33 @@ html {
 .additional-stats::-webkit-scrollbar {
   display: none;
 }
-.additional-stats-actions-banner, .additional-stats-special-banner {
+.additional-stats-actions-banner, .additional-stats-special-banner, .additional-stats-legendary-banner {
   background-image: linear-gradient(to bottom right, rgba(155, 0, 0, 0.8), rgba(188, 0, 0, 0.8)), url("../roughcloth/roughcloth.png");
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   color: #fff;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 1rem;
   transform: skewY(-2deg);
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
 }
-.additional-stats-actions-banner > h2, .additional-stats-special-banner > h2 {
+.additional-stats-actions-banner > h2, .additional-stats-special-banner > h2, .additional-stats-legendary-banner > h2 {
   transform: skewY(2deg);
 }
-.additional-stats-text-wrapper, .additional-stats-special-text-wrapper {
-  margin-top: 2rem;
+.additional-stats-text-wrapper, .additional-stats-special-text-wrapper, .additional-stats-legendary-text-wrapper {
   text-align: left;
   color: #666668;
+  margin-bottom: -3rem;
   padding: 2rem;
 }
-.additional-stats-text-wrapper > h3, .additional-stats-special-text-wrapper > h3 {
+.additional-stats-text-wrapper > h3, .additional-stats-special-text-wrapper > h3, .additional-stats-legendary-text-wrapper > h3 {
   font-family: "Yanone Kaffeesatz", sans-serif;
   letter-spacing: 0.2rem;
   font-size: 2rem;
 }
-.additional-stats-text-wrapper > p, .additional-stats-special-text-wrapper > p {
+.additional-stats-text-wrapper > p, .additional-stats-special-text-wrapper > p, .additional-stats-legendary-text-wrapper > p {
   margin-top: 1rem;
   margin-bottom: 1.6rem;
   font-family: "Lato", sans-serif;
