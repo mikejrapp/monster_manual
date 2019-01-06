@@ -104,18 +104,6 @@ class Grid extends React.Component{
                 ]
             },
         };
-
-        this.base = Object.keys(this.state.subject.saves).map((saves) => {
-            if(this.state.subject.saves[saves] != null){
-                return(
-                    <p className="base-stats-throws"><span className="base-stats-throws-title">{saves}</span> +{this.state.subject.saves[saves]}</p>
-                )
-            }
-        });
-
-        this.skillMap = Object.keys(this.state.subject.skills).map((skill) =>
-            <p className="base-stats-throws"><span className="base-stats-throws-title">{skill}</span> +{this.state.subject.skills[skill]}</p>
-        )
     }
 
 
@@ -128,8 +116,6 @@ class Grid extends React.Component{
                 />
                 <StatBlock
                     subject={this.state.subject}
-                    baseStats={this.base}
-                    skills={this.skillMap}
                     actions={this.state.subject.actions}
                     legendaryActions={this.state.subject.legendaryActions}
                     specialAbilities={this.state.subject.specialAbilities}

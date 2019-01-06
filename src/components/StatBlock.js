@@ -8,8 +8,6 @@ const StatBlock = (props) =>{
         <div className={"stat-block"}>
             <BaseStats
                 subject={props.subject}
-                baseStats={props.baseStats}
-                skills={props.skills}
             />
             <Attributes subject={props.subject}/>
             <AdditionalStats

@@ -2,15 +2,18 @@ import React from "react";
 
 const BaseStats = (props) =>{
 
+    console.log(props.subject.saves);
     const checkSkills = () => {
-        if(props.skills.length > 0){
+        if(props.subject.hasOwnProperty("skills") && Object.keys(props.subject.skills).length > 0){
             return(
                 <div>
                     <div className="base-stats-title-banner">
                         <h4 className="base-stats-title">Skills</h4>
                     </div>
                     <div className="base-stats-wrapper">
-                        {props.skills}
+                        {Object.keys(props.subject.skills).map((skill) =>
+                            <p className="base-stats-throws"><span className="base-stats-throws-title">{skill}</span> +{props.subject.skills[skill]}</p>
+                        )}
                     </div>
                 </div>
             )
@@ -125,7 +128,13 @@ const BaseStats = (props) =>{
                             <h4 className="base-stats-title">Saving Throws</h4>
                         </div>
                         <div className="base-stats-wrapper">
-                            {props.baseStats}
+                            {Object.keys(props.subject.saves).map((saves) =>{
+                                if(props.subject.saves[saves] != null){
+                                    return(
+                                        <p className="base-stats-throws"><span className="base-stats-throws-title">{saves}</span> +{props.subject.saves[saves]}</p>
+                                    )
+                                }
+                            })}
                         </div>
 
                         {checkSkills()}
