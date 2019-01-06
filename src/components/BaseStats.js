@@ -1,6 +1,6 @@
 import React from "react";
 
-const BaseStats = () =>{
+const BaseStats = (props) =>{
     return (
         <div className={"base-stats"}>
 
@@ -10,19 +10,19 @@ const BaseStats = () =>{
 
                     <div className="base-stats-card-front">
                         <div className={"base-stats-heading"}>
-                            <h3 className={"base-stats-heading-header"}>Lich</h3>
-                            <p className={"base-stats-heading-subtext"}>Medium Undead, any evil alignment</p>
+                            <h3 className={"base-stats-heading-header"}>{props.subject.name}</h3>
+                            <p className={"base-stats-heading-subtext"}>{props.subject.size} {props.subject.type}, {props.subject.alignment}</p>
                         </div>
 
                         <div className={"base-stats-icons"}>
                             <div className={"base-stats-icons_wrapper"}>
-                                <i className="fas fa-shield-alt fa-3x armor-class"><span className={"armor-class-span"}>17</span></i>
+                                <i className="fas fa-shield-alt fa-3x armor-class"><span className={"armor-class-span"}>{props.subject.baseStats.ac}</span></i>
                             </div>
                             <div className={"base-stats-icons_wrapper"}>
-                                <i className="fas fa-heart fa-3x  health-points"><span className={"health-points-span"}>135</span></i>
+                                <i className="fas fa-heart fa-3x  health-points"><span className={"health-points-span"}>{props.subject.baseStats.hp}</span></i>
                             </div>
                             <div className={"base-stats-icons_wrapper"}>
-                                <i className="fas fa-bolt fa-3x base-speed"><span className={"base-speed-span"}>30 ft</span></i>
+                                <i className="fas fa-bolt fa-3x base-speed"><span className={"base-speed-span"}>{props.subject.baseStats.speed}</span></i>
                             </div>
                         </div>
                     </div>
@@ -33,47 +33,58 @@ const BaseStats = () =>{
                             <h4 className="base-stats-title">Saving Throws</h4>
                         </div>
                         <div className="base-stats-wrapper">
-                            <p className="base-stats-throws">CON +10</p>
-                            <p className="base-stats-throws">INT +12</p>
-                            <p className="base-stats-throws">WIS +9</p>
+                            {props.baseStats}
                         </div>
 
                         <div className="base-stats-title-banner">
                             <h4 className="base-stats-title">Skills</h4>
                         </div>
                         <div className="base-stats-wrapper">
-                            <p className="base-stats-throws">Arcana +19</p>
-                            <p className="base-stats-throws">History +12</p>
-                            <p className="base-stats-throws">Insight +9</p>
-                            <p className="base-stats-throws">Perception +9</p>
+                            {props.skills}
                         </div>
 
                         <div className="base-stats-title-banner">
                             <h4 className="base-stats-title">Damage Resistances</h4>
                         </div>
                         <div className="base-stats-wrapper">
-                            <p className="base-stats-resistances">Cold, Lightning, Necrotic</p>
+                            <p className="base-stats-resistances">
+                                {props.subject.damageResistances.map((resistance) =>
+                                    <span className="base-stats-resistances-span">{resistance}</span>
+                                )}
+                            </p>
                         </div>
 
                         <div className="base-stats-title-banner">
                             <h4 className="base-stats-title">Damage Immunities</h4>
                         </div>
                         <div className="base-stats-wrapper">
-                            <p className="base-stats-resistances">Poison, Bludgeoning, Piercing, Slashing from non magical items</p>
+                            <p className="base-stats-resistances">
+                                {props.subject.damageImmunities.map( (immunity) =>
+                                    <span className="base-stats-resistances-span">{immunity}</span>
+                                )}
+                            </p>
                         </div>
 
                         <div className="base-stats-title-banner">
                             <h4 className="base-stats-title">Condition Immunities</h4>
                         </div>
                         <div className="base-stats-wrapper">
-                            <p className="base-stats-resistances">Charmed, Exhaustion, Frightened, Paralyzed, Poisoned</p>
+                            <p className="base-stats-resistances">
+                                {props.subject.conditionImmunities.map((immunity) =>
+                                    <span className="base-stats-resistances-span">{immunity}</span>
+                                )}
+                            </p>
                         </div>
 
                         <div className="base-stats-title-banner">
                             <h4 className="base-stats-title">Senses</h4>
                         </div>
                         <div className="base-stats-wrapper">
-                            <p className="base-stats-resistances">Truesight 120ft, Passive Perception 19</p>
+                            <p className="base-stats-resistances">
+                                {props.subject.senses.map((sense) =>
+                                    <span className="base-stats-resistances-span">{sense}</span>
+                                )}
+                            </p>
                         </div>
 
                     </div>

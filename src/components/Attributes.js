@@ -1,6 +1,6 @@
 import React from "react";
 
-const Attributes = () =>{
+const Attributes = (props) =>{
     return(
         <div className={"attributes"}>
 
@@ -35,12 +35,12 @@ const Attributes = () =>{
             </div>
 
             <div className={"attributes-score-wrapper"}>
-                <p className={"attributes-score"}>11</p>
-                <p className={"attributes-score"}>16</p>
-                <p className={"attributes-score"}>16</p>
-                <p className={"attributes-score"}>20</p>
-                <p className={"attributes-score"}>14</p>
-                <p className={"attributes-score"}>16</p>
+                <p className={"attributes-score"}>{props.subject.attributes.strength}</p>
+                <p className={"attributes-score"}>{props.subject.attributes.dexterity}</p>
+                <p className={"attributes-score"}>{props.subject.attributes.constitution}</p>
+                <p className={"attributes-score"}>{props.subject.attributes.intelligence}</p>
+                <p className={"attributes-score"}>{props.subject.attributes.wisdom}</p>
+                <p className={"attributes-score"}>{props.subject.attributes.charisma}</p>
             </div>
         </div>
     )

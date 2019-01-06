@@ -10,7 +10,7 @@ html {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 4fr;
-  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
   grid-gap: 1.5rem;
   height: 80vh;
   width: 90vw;
@@ -39,8 +39,8 @@ html {
 .stat-block {
   grid-column-start: 3;
   grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
   background-color: #c9ccc1;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
@@ -59,8 +59,8 @@ html {
 .action-block {
   grid-column-start: 3;
   grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   background-color: #c9ccc1;
   border-radius: 0.8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
@@ -86,7 +86,7 @@ html {
 }
 
 .search {
-  height: 3rem;
+  height: 10%;
   width: 60%;
   margin: 6rem 0 0 2rem;
   border: none;
@@ -196,6 +196,10 @@ html {
 .base-stats-card-back {
   height: 100%;
   transform: rotateY(180deg);
+  overflow-y: scroll;
+}
+.base-stats-card-back::-webkit-scrollbar {
+  display: none;
 }
 .base-stats-title-banner {
   background-color: #bc0000;
@@ -226,11 +230,20 @@ html {
   font-family: "Lato", sans-serif;
   color: #666668;
 }
+.base-stats-throws-type {
+  text-transform: uppercase;
+}
+.base-stats-throws-title {
+  text-transform: capitalize;
+}
 .base-stats-resistances {
   margin: 1rem;
   font-size: 1.4rem;
   font-family: "Lato", sans-serif;
   color: #666668;
+}
+.base-stats-resistances-span {
+  margin-right: 1rem;
 }
 
 .armor-class:hover {

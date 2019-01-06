@@ -1,8 +1,8 @@
 .action-block{
   grid-column-start: 3;
   grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 
   background-color: $color-light-gray;
 
@@ -38,7 +38,7 @@
 }
 
 .search{
-  height: 3rem;
+  height: 10%;
   width: 60%;
 
   margin: 6rem 0 0 2rem;
