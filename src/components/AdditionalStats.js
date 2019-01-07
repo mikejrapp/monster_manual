@@ -14,7 +14,7 @@ const AdditionalStats = (props) =>{
                             return(
                                 <div className={"additional-stats-text-wrapper"}>
                                     <h3>{action.name}</h3>
-                                    <p>{action.description}</p>
+                                    <p>{action.desc}</p>
                                 </div>
                             )
                         })
@@ -25,7 +25,7 @@ const AdditionalStats = (props) =>{
     };
 
     const checkLegendary = () => {
-        if(props.legendaryActions){
+        if(props.legendaryActions.length > 0){
             return(
                 <div className={"additional-stats-legendary-wrapper"}>
                     <div className={"additional-stats-legendary-banner"}>
@@ -36,7 +36,7 @@ const AdditionalStats = (props) =>{
                             return(
                                 <div className={"additional-stats-text-wrapper"}>
                                     <h3>{legendaryAction.name}</h3>
-                                    <p>{legendaryAction.description}</p>
+                                    <p>{legendaryAction.desc}</p>
                                 </div>
                             )
                         })
@@ -53,9 +53,16 @@ const AdditionalStats = (props) =>{
                     <div className={"additional-stats-special-banner"}>
                         <h2>Special Abilities</h2>
                     </div>
-                    <div className={"additional-stats-text-wrapper"}>
-
-                    </div>
+                    {
+                        props.specialAbilities.map((specialAbilites) => {
+                            return(
+                                <div className={"additional-stats-text-wrapper"}>
+                                    <h3>{specialAbilites.name}</h3>
+                                    <p>{specialAbilites.desc}</p>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             )
         }

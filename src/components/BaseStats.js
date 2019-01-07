@@ -1,8 +1,6 @@
 import React from "react";
 
 const BaseStats = (props) =>{
-
-    console.log(props.subject.saves);
     const checkSkills = () => {
         if(props.subject.hasOwnProperty("skills") && Object.keys(props.subject.skills).length > 0){
             return(

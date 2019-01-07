@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4efed43-18f8-4d56-be99-f8df13db44cf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/AdditionalStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AdditionalStats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BaseStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseStats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StatBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StatBlock.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,20 +17,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/BaseStats.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="130" column="61" selection-start-line="130" selection-start-column="61" selection-end-line="130" selection-end-column="61" />
+            <state relative-caret-position="42">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/AdditionalStats.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Grid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1771">
-              <caret line="108" column="12" lean-forward="true" selection-start-line="108" selection-start-column="12" selection-end-line="112" selection-end-column="13" />
+            <state relative-caret-position="865">
+              <caret line="125" column="48" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
+              <caret line="134" column="48" selection-start-line="134" selection-start-column="48" selection-end-line="134" selection-end-column="48" />
+              <caret line="138" column="48" selection-start-line="138" selection-start-column="48" selection-end-line="138" selection-end-column="48" />
+              <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
+              <caret line="150" column="48" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -76,10 +89,10 @@
         <option value="$PROJECT_DIR$/src/sass/components/_base-stats.scss" />
         <option value="$PROJECT_DIR$/src/sass/components/_grid.scss" />
         <option value="$PROJECT_DIR$/src/sass/components/_additional-stats.scss" />
-        <option value="$PROJECT_DIR$/src/components/AdditionalStats.js" />
-        <option value="$PROJECT_DIR$/src/components/Grid.js" />
         <option value="$PROJECT_DIR$/src/components/StatBlock.js" />
         <option value="$PROJECT_DIR$/src/components/BaseStats.js" />
+        <option value="$PROJECT_DIR$/src/components/AdditionalStats.js" />
+        <option value="$PROJECT_DIR$/src/components/Grid.js" />
       </list>
     </option>
   </component>
@@ -169,12 +182,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546369608401</updated>
-      <workItem from="1546369609821" duration="25704000" />
+      <workItem from="1546369609821" duration="31022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25704000" />
+    <option name="totallyTimeSpent" value="31022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -315,13 +328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AdditionalStats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Attributes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -346,20 +352,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Grid.js">
+    <entry file="file://$PROJECT_DIR$/src/components/BaseStats.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1771">
-          <caret line="108" column="12" lean-forward="true" selection-start-line="108" selection-start-column="12" selection-end-line="112" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="42">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BaseStats.js">
+    <entry file="file://$PROJECT_DIR$/src/components/AdditionalStats.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="130" column="61" selection-start-line="130" selection-start-column="61" selection-end-line="130" selection-end-column="61" />
+        <state relative-caret-position="366">
+          <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Grid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="865">
+          <caret line="125" column="48" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
+          <caret line="134" column="48" selection-start-line="134" selection-start-column="48" selection-end-line="134" selection-end-column="48" />
+          <caret line="138" column="48" selection-start-line="138" selection-start-column="48" selection-end-line="138" selection-end-column="48" />
+          <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
+          <caret line="150" column="48" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
