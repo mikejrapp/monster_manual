@@ -163,3 +163,34 @@
     display: inline-block;
     position: absolute;
 }
+
+@media only screen and (max-width: 900px){
+    .base-stats{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        &-heading{
+            height: 10px;
+            overflow: hidden;
+            margin-top: 0;
+            transform: skew(100deg);
+
+            &-header{
+                margin-top: -15px;
+            }
+        }
+
+        &-icons_wrapper{
+            display: inline-block;
+            position: relative;
+            margin-left: 0;
+        }
+
+        &-icons{
+            text-align: left;
+            margin: 0 auto;
+        }
+    }
+}

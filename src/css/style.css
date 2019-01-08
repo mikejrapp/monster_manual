@@ -24,6 +24,11 @@ html {
     grid-template-rows: 15vh 50vh 45vh;
   }
 }
+@media only screen and (max-width: 900px) {
+  .grid {
+    grid-template-rows: 15vh 75vh 45vh;
+  }
+}
 .subject-card {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -76,6 +81,12 @@ html {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .stat-block {
+    grid-template-columns: 20% 10% 67%;
+    grid-template-rows: 25% 40% 32%;
   }
 }
 .action-block {
@@ -338,6 +349,32 @@ html {
   position: absolute;
 }
 
+@media only screen and (max-width: 900px) {
+  .base-stats {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .base-stats-heading {
+    height: 10px;
+    overflow: hidden;
+    margin-top: 0;
+    transform: skew(100deg);
+  }
+  .base-stats-heading-header {
+    margin-top: -15px;
+  }
+  .base-stats-icons_wrapper {
+    display: inline-block;
+    position: relative;
+    margin-left: 0;
+  }
+  .base-stats-icons {
+    text-align: left;
+    margin: 0 auto;
+  }
+}
 .attributes {
   grid-column-start: 3;
   grid-column-end: 4;
@@ -447,6 +484,14 @@ html {
   margin-right: 1.8rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .attributes {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
 .additional-stats {
   grid-column-start: 3;
   grid-column-end: 4;
@@ -459,43 +504,6 @@ html {
   display: grid;
   padding: 1rem 0 0 0;
   overflow-y: scroll;
-  /*&-left-column{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-
-  &-left-wrapper{
-
-    & > h3{
-      background-image: linear-gradient(to bottom right, rgba($color-deep-red, .8), rgba($color-middle-red, .8));
-      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-
-      font-family: "Yanone Kaffeesatz", sans-serif;
-      font-size: 2rem;
-      text-align: left;
-      color: $color-white;
-
-      padding: .6rem .6rem .6rem 2rem;
-    }
-
-    & > p{
-      font-family: "Lato", sans-serif;
-      font-size: 1.4rem;
-      font-weight: bold;
-      text-align: left;
-      color: $color-ink-gray;
-
-      margin: 1.2rem 0 1rem 2rem;
-
-      & > span{
-        &:not(:first-child){
-          margin-left: 1.8rem;
-        }
-      }
-    }
-  }*/
 }
 .additional-stats::-webkit-scrollbar {
   display: none;
@@ -533,6 +541,14 @@ html {
   font-size: 1.4rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .additional-stats {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
 .base-stats-heading {
   text-align: center;
   margin-top: 3.2rem;

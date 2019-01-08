@@ -31,3 +31,10 @@
         grid-row-end: 3;
     }
 }
+
+@media only screen and (max-width: 900px){
+    .stat-block{
+        grid-template-columns: 20% 10% 67%;
+        grid-template-rows: 25% 40% 32%;
+    }
+}

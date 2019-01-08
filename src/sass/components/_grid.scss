@@ -16,3 +16,9 @@
         grid-template-rows: 15vh 50vh 45vh;
     }
 }
+
+@media only screen and (max-width: 900px){
+    .grid{
+        grid-template-rows: 15vh 75vh 45vh;
+    }
+}

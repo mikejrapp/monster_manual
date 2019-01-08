@@ -65,45 +65,13 @@
             font-size: 1.4rem;
         }
     }
-
-    /*&-left-column{
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 3;
-    }
-
-    &-left-wrapper{
-
-      & > h3{
-        background-image: linear-gradient(to bottom right, rgba($color-deep-red, .8), rgba($color-middle-red, .8));
-        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-
-        font-family: "Yanone Kaffeesatz", sans-serif;
-        font-size: 2rem;
-        text-align: left;
-        color: $color-white;
-
-        padding: .6rem .6rem .6rem 2rem;
-      }
-
-      & > p{
-        font-family: "Lato", sans-serif;
-        font-size: 1.4rem;
-        font-weight: bold;
-        text-align: left;
-        color: $color-ink-gray;
-
-        margin: 1.2rem 0 1rem 2rem;
-
-        & > span{
-          &:not(:first-child){
-            margin-left: 1.8rem;
-          }
-        }
-      }
-    }*/
-
 }
 
-//background-image: linear-gradient(to bottom right, rgba($color-deep-red, .8), rgba($color-middle-red, .8));
+@media only screen and (max-width: 900px){
+    .additional-stats{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}

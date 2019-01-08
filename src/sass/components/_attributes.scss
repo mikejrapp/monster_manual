@@ -128,3 +128,12 @@
         margin-right: $icon-margin-default;
     }
 }
+
+@media only screen and (max-width: 900px){
+    .attributes{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
