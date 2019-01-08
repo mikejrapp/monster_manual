@@ -46,7 +46,6 @@
             background-image: $paper-texture;
             border-radius: $box-corners;
             box-shadow: $shadow-main;
-
         }
 
         &-front{
@@ -117,27 +116,6 @@
 
 }
 
-.armor-class{
-    &:hover{
-        color: $color-middle-blue;
-        cursor: pointer;
-    }
-}
-
-.health-points{
-    &:hover{
-        color: $color-deep-red;
-        cursor: pointer;
-    }
-}
-
-.base-speed{
-    &:hover{
-        color: $color-gold-yellow;
-        cursor: pointer;
-    }
-}
-
 .armor-class-span,
 .health-points-span,
 .base-speed-span{
@@ -145,4 +123,44 @@
     font-family: "Lato", sans-serif;
     margin-left: 2rem;
     color: $color-ink-gray;
+}
+
+@media only screen and (max-height: 820px){
+    .armor-class-span,
+    .health-points-span,
+    .base-speed-span{
+        font-size: 18px;
+    }
+
+    .base-speed-wrapper{
+        height: 10px;
+        display: inline;
+        position: absolute;
+    }
+
+    .base-speed-item{
+        display: inline;
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-height: 700px){
+    .base-stats-icons_wrapper{
+        margin-top: 40px;
+    }
+
+    .base-speed-wrapper{
+        height: 10px;
+    }
+}
+
+.base-speed-wrapper{
+    width: 30rem;
+    height: 30rem;
+    display: inline-block;
+    position: absolute;
+}
+
+.base-speed-item{
+    margin-bottom: 1.5rem;
 }

@@ -15,7 +15,6 @@ class Grid extends React.Component{
 
                 const result = response.results[0];
                 if(result){
-                    console.log(result.special_abilities);
                     this.setState(
                         {
                             subject: {
@@ -26,7 +25,7 @@ class Grid extends React.Component{
                                 baseStats: {
                                     ac: result.armor_class,
                                     hp: result.hit_points,
-                                    speed: result.speed.walk
+                                    speed: result.speed
                                 },
                                 attributes: {
                                     strength: result.strength,

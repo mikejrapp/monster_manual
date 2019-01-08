@@ -1,7 +1,6 @@
 import React from "react";
 
 const ActionBlock = (props) =>{
-    console.log(props);
     return(
         <div className={"action-block"}>
             <div className="action-wrapper">

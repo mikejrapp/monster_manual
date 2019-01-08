@@ -5,14 +5,15 @@
 
 html {
   font-size: 62.5%;
+  background-color: #eaeaea;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 4fr;
-  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 3fr;
   grid-gap: 1.5rem;
-  height: 80vh;
+  height: 85vh;
   width: 90vw;
   margin: 4vh auto 0;
   padding: 2.5rem;
@@ -246,21 +247,6 @@ html {
   margin-right: 1rem;
 }
 
-.armor-class:hover {
-  color: #2e5491;
-  cursor: pointer;
-}
-
-.health-points:hover {
-  color: #9b0000;
-  cursor: pointer;
-}
-
-.base-speed:hover {
-  color: #c4a74a;
-  cursor: pointer;
-}
-
 .armor-class-span,
 .health-points-span,
 .base-speed-span {
@@ -268,6 +254,44 @@ html {
   font-family: "Lato", sans-serif;
   margin-left: 2rem;
   color: #666668;
+}
+
+@media only screen and (max-height: 820px) {
+  .armor-class-span,
+.health-points-span,
+.base-speed-span {
+    font-size: 18px;
+  }
+
+  .base-speed-wrapper {
+    height: 10px;
+    display: inline;
+    position: absolute;
+  }
+
+  .base-speed-item {
+    display: inline;
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .base-stats-icons_wrapper {
+    margin-top: 40px;
+  }
+
+  .base-speed-wrapper {
+    height: 10px;
+  }
+}
+.base-speed-wrapper {
+  width: 30rem;
+  height: 30rem;
+  display: inline-block;
+  position: absolute;
+}
+
+.base-speed-item {
+  margin-bottom: 1.5rem;
 }
 
 .attributes {

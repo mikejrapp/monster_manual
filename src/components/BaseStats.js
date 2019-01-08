@@ -1,6 +1,18 @@
 import React from "react";
 
 const BaseStats = (props) =>{
+    const checkSpeed = () => {
+        if(props.subject.baseStats.speed){
+            return(
+                <div className="base-speed-wrapper">{Object.keys(props.subject.baseStats.speed).map((surface) =>
+                    <div className="base-speed-item">
+                        {props.subject.baseStats.speed[surface] + " ft " + surface}
+                    </div>
+                )}</div>
+            )
+        }
+    };
+
     const checkSkills = () => {
         if(props.subject.hasOwnProperty("skills") && Object.keys(props.subject.skills).length > 0){
             return(
@@ -115,7 +127,11 @@ const BaseStats = (props) =>{
                                 <i className="fas fa-heart fa-3x  health-points"><span className={"health-points-span"}>{props.subject.baseStats.hp}</span></i>
                             </div>
                             <div className={"base-stats-icons_wrapper"}>
-                                <i className="fas fa-bolt fa-3x base-speed"><span className={"base-speed-span"}>{props.subject.baseStats.speed}</span></i>
+                                <i className="fas fa-bolt fa-3x base-speed">
+                                    <span className="base-speed-span">
+                                        {checkSpeed()}
+                                    </span>
+                                </i>
                             </div>
                         </div>
                     </div>
