@@ -19,6 +19,11 @@ html {
   padding: 2.5rem;
 }
 
+@media only screen and (max-width: 1400px) {
+  .grid {
+    grid-template-rows: 15vh 50vh 45vh;
+  }
+}
 .subject-card {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -37,6 +42,14 @@ html {
   animation-timing-function: ease-out;
 }
 
+@media only screen and (max-width: 1400px) {
+  .subject-card {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
 .stat-block {
   grid-column-start: 3;
   grid-column-end: 3;
@@ -57,6 +70,14 @@ html {
   animation-timing-function: ease-out;
 }
 
+@media only screen and (max-width: 1400px) {
+  .stat-block {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
 .action-block {
   grid-column-start: 3;
   grid-column-end: 3;
@@ -109,6 +130,14 @@ html {
   transform: scale(1.01);
 }
 
+@media only screen and (max-width: 1400px) {
+  .action-block {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
 .subject-image {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -122,6 +151,14 @@ html {
   background-position: top;
 }
 
+@media only screen and (max-width: 1400px) {
+  .subject-image {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+}
 .subject-text {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -149,6 +186,14 @@ html {
   font-size: 1.4rem;
 }
 
+@media only screen and (max-width: 1400px) {
+  .subject-text {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+}
 .base-stats {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -256,6 +301,10 @@ html {
   color: #666668;
 }
 
+.base-speed-item {
+  margin-bottom: 1.5rem;
+}
+
 @media only screen and (max-height: 820px) {
   .armor-class-span,
 .health-points-span,
@@ -285,13 +334,8 @@ html {
 }
 .base-speed-wrapper {
   width: 30rem;
-  height: 30rem;
   display: inline-block;
   position: absolute;
-}
-
-.base-speed-item {
-  margin-bottom: 1.5rem;
 }
 
 .attributes {

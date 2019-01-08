@@ -13,3 +13,12 @@
   background-size: cover;
   background-position: top;
 }
+
+@media only screen and (max-width: 1400px){
+  .subject-image{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+}

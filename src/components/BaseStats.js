@@ -6,7 +6,7 @@ const BaseStats = (props) =>{
             return(
                 <div className="base-speed-wrapper">{Object.keys(props.subject.baseStats.speed).map((surface) =>
                     <div className="base-speed-item">
-                        {props.subject.baseStats.speed[surface] + " ft " + surface}
+                        {surface + " " + props.subject.baseStats.speed[surface] + " ft "}
                     </div>
                 )}</div>
             )
