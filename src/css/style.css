@@ -27,6 +27,12 @@ html {
 @media only screen and (max-width: 900px) {
   .grid {
     grid-template-rows: 15vh 75vh 45vh;
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  #root {
+    width: 100vw;
   }
 }
 .subject-card {
@@ -360,19 +366,39 @@ html {
     height: 10px;
     overflow: hidden;
     margin-top: 0;
-    transform: skew(100deg);
+    transform: translateY(0) !important;
   }
   .base-stats-heading-header {
-    margin-top: -15px;
+    margin-top: -25px;
+    transform: translateY(0) !important;
+  }
+  .base-stats-heading-subtext {
+    transform: translateY(0) !important;
   }
   .base-stats-icons_wrapper {
     display: inline-block;
     position: relative;
-    margin-left: 0;
+    margin-left: 20px;
   }
   .base-stats-icons {
     text-align: left;
+    width: 90%;
     margin: 0 auto;
+  }
+
+  .armor-class-span,
+.health-points-span {
+    font-size: 20px;
+  }
+
+  .base-speed-wrapper {
+    width: 500px;
+  }
+
+  .base-speed-item {
+    font-size: 20px;
+    margin-right: 20px;
+    display: inline-block;
   }
 }
 .attributes {
@@ -484,12 +510,31 @@ html {
   margin-right: 1.8rem;
 }
 
+.icon-small {
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
   .attributes {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+  }
+  .attributes-strength, .attributes-dexterity, .attributes-constitution, .attributes-intelligence, .attributes-wisdom, .attributes-charisma {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .attributes-text-short {
+    margin: 0 10px 0 10px;
+  }
+
+  .icon-full {
+    display: none;
+  }
+
+  .icon-small {
+    display: block;
   }
 }
 .additional-stats {

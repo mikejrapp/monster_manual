@@ -121,13 +121,20 @@ const BaseStats = (props) =>{
 
                         <div className={"base-stats-icons"}>
                             <div className={"base-stats-icons_wrapper"}>
-                                <i className="fas fa-shield-alt fa-3x armor-class"><span className={"armor-class-span"}>{props.subject.baseStats.ac}</span></i>
+                                <i className="fas fa-shield-alt fa-3x armor-class icon-full"><span className={"armor-class-span"}>{props.subject.baseStats.ac}</span></i>
+                                <i className="fas fa-shield-alt fa-2x armor-class icon-small"><span className={"armor-class-span"}>{props.subject.baseStats.ac}</span></i>
                             </div>
                             <div className={"base-stats-icons_wrapper"}>
-                                <i className="fas fa-heart fa-3x  health-points"><span className={"health-points-span"}>{props.subject.baseStats.hp}</span></i>
+                                <i className="fas fa-heart fa-3x  health-points icon-full"><span className={"health-points-span"}>{props.subject.baseStats.hp}</span></i>
+                                <i className="fas fa-heart fa-2x  health-points icon-small"><span className={"health-points-span"}>{props.subject.baseStats.hp}</span></i>
                             </div>
                             <div className={"base-stats-icons_wrapper"}>
-                                <i className="fas fa-bolt fa-3x base-speed">
+                                <i className="fas fa-bolt fa-3x base-speed icon-full">
+                                    <span className="base-speed-span">
+                                        {checkSpeed()}
+                                    </span>
+                                </i>
+                                <i className="fas fa-bolt fa-2x base-speed icon-small">
                                     <span className="base-speed-span">
                                         {checkSpeed()}
                                     </span>

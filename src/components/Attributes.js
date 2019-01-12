@@ -6,22 +6,28 @@ const Attributes = (props) =>{
 
             <div className={"attributes-icon-wrapper"}>
                 <div className={"attributes-strength"}>
-                    <i className="fas fa-fist-raised fa-3x"></i>
+                    <i className="fas fa-fist-raised fa-3x icon-full"></i>
+                    <i className="fas fa-fist-raised fa-2x icon-small"></i>
                 </div>
                 <div className={"attributes-dexterity"}>
-                    <i className="fas fa-running fa-3x"></i>
+                    <i className="fas fa-running fa-3x icon-full"></i>
+                    <i className="fas fa-running fa-2x icon-small"></i>
                 </div>
                 <div className={"attributes-constitution"}>
-                    <i className="fas fa-mountain fa-3x"></i>
+                    <i className="fas fa-mountain fa-3x icon-full"></i>
+                    <i className="fas fa-mountain fa-2x icon-small"></i>
                 </div>
                 <div className={"attributes-intelligence"}>
-                    <i className="fas fa-brain fa-3x"></i>
+                    <i className="fas fa-brain fa-3x icon-full"></i>
+                    <i className="fas fa-brain fa-2x icon-small"></i>
                 </div>
                 <div className={"attributes-wisdom"}>
-                    <i className="fas fa-spa fa-3x"></i>
+                    <i className="fas fa-spa fa-3x icon-full"></i>
+                    <i className="fas fa-spa fa-2x icon-small"></i>
                 </div>
                 <div className={"attributes-charisma"}>
-                    <i className="fas fa-smile-wink fa-3x"></i>
+                    <i className="fas fa-smile-wink fa-3x icon-full"></i>
+                    <i className="fas fa-smile-wink fa-2x icon-small"></i>
                 </div>
             </div>
 
