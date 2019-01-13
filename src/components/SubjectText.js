@@ -5,8 +5,8 @@ const SubjectText = (props) =>{
     return (
         <div className={"subject-text"}>
             <div className={"subject-text--wrapper"}>
-                <h3 className={"subject-text--header"}>{props.subject}</h3>
-                <h4 className={"subject-text--body"}>CR {props.challengeRating}</h4>
+                <h3 className={"subject-text--header"}>Subject: {props.subject}</h3>
+                <h4 className={"subject-text--body"}>Challenge Rating: {props.challengeRating}</h4>
             </div>
         </div>
     )
