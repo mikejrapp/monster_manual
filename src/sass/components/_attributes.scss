@@ -133,7 +133,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: $phone-width){
     .attributes{
         grid-column-start: 1;
         grid-column-end: 4;

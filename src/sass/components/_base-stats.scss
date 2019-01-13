@@ -164,7 +164,7 @@
     position: absolute;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: $phone-width){
     .base-stats{
         grid-column-start: 1;
         grid-column-end: 4;
@@ -174,8 +174,10 @@
         &-heading{
             height: 10px;
             overflow: hidden;
-            margin-top: 0;
+            margin-top: 0 !important;
             transform: translateY(0) !important;
+            border-top-left-radius: $box-corners;
+            border-top-right-radius: $box-corners;
 
             &-header{
                 margin-top: -25px;
@@ -191,6 +193,7 @@
             display: inline-block;
             position: relative;
             margin-left: 20px;
+            margin-top: 10px;
         }
 
         &-icons{
@@ -200,17 +203,21 @@
         }
     }
 
+    .attributes-score{
+        margin: 0 10px 0 10px !important;
+    }
+
     .armor-class-span,
     .health-points-span{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .base-speed-wrapper{
-        width: 500px;
+        width: 140px;
     }
 
     .base-speed-item{
-        font-size: 20px;
+        font-size: 16px;
         margin-right: 20px;
         display: inline-block;
     }

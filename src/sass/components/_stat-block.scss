@@ -16,6 +16,8 @@
 
     padding: 1.4rem;
 
+    position: relative;
+
     animation-name: slide-in-from-right;
     animation-delay: 1s;
     animation-duration: 1.2s;
@@ -23,7 +25,7 @@
     animation-timing-function: ease-out;
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: $tablet-width){
     .stat-block{
         grid-column-start: 1;
         grid-column-end: 4;
@@ -32,9 +34,9 @@
     }
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: $phone-width){
     .stat-block{
-        grid-template-columns: 20% 10% 67%;
-        grid-template-rows: 25% 40% 32%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 }

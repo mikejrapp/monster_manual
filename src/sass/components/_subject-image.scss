@@ -14,7 +14,7 @@
   background-position: top;
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: $tablet-width){
   .subject-image{
     grid-column-start: 1;
     grid-column-end: 3;

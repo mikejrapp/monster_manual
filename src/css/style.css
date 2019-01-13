@@ -24,11 +24,12 @@ html {
     grid-template-rows: 15vh 50vh 45vh;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
   .grid {
     grid-template-rows: 15vh 75vh 45vh;
     width: 100vw;
     margin: 0 auto;
+    padding: 10px;
   }
 
   #root {
@@ -74,6 +75,7 @@ html {
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1.2rem;
   padding: 1.4rem;
+  position: relative;
   animation-name: slide-in-from-right;
   animation-delay: 1s;
   animation-duration: 1.2s;
@@ -89,10 +91,10 @@ html {
     grid-row-end: 3;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
   .stat-block {
-    grid-template-columns: 20% 10% 67%;
-    grid-template-rows: 25% 40% 32%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
 .action-block {
@@ -355,7 +357,7 @@ html {
   position: absolute;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
   .base-stats {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -365,8 +367,10 @@ html {
   .base-stats-heading {
     height: 10px;
     overflow: hidden;
-    margin-top: 0;
+    margin-top: 0 !important;
     transform: translateY(0) !important;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
   }
   .base-stats-heading-header {
     margin-top: -25px;
@@ -379,6 +383,7 @@ html {
     display: inline-block;
     position: relative;
     margin-left: 20px;
+    margin-top: 10px;
   }
   .base-stats-icons {
     text-align: left;
@@ -386,17 +391,21 @@ html {
     margin: 0 auto;
   }
 
+  .attributes-score {
+    margin: 0 10px 0 10px !important;
+  }
+
   .armor-class-span,
 .health-points-span {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .base-speed-wrapper {
-    width: 500px;
+    width: 140px;
   }
 
   .base-speed-item {
-    font-size: 20px;
+    font-size: 16px;
     margin-right: 20px;
     display: inline-block;
   }
@@ -514,7 +523,7 @@ html {
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
   .attributes {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -586,7 +595,7 @@ html {
   font-size: 1.4rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
   .additional-stats {
     grid-column-start: 1;
     grid-column-end: 4;

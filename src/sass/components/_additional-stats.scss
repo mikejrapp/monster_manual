@@ -67,7 +67,7 @@
     }
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: $phone-width){
     .additional-stats{
         grid-column-start: 1;
         grid-column-end: 4;
