@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4efed43-18f8-4d56-be99-f8df13db44cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/BaseSpeed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ConditionImmunity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DamageImmunity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DamageResistance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Senses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Skills.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SubjectCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SubjectCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SubjectText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SubjectText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BaseStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseStats.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,35 +22,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/SubjectCard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/SubjectText.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Grid.js">
+        <entry file="file://$PROJECT_DIR$/src/components/BaseStats.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="115" column="35" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
+            <state relative-caret-position="168">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Senses.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ConditionImmunity.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DamageImmunity.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DamageResistance.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Skills.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/BaseSpeed.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -65,6 +102,10 @@
       <find>consol.log</find>
       <find>console.</find>
       <find>console.log</find>
+      <find>checkSkills</find>
+      <find>checkDamageResistance</find>
+      <find>checkDamageImmunity</find>
+      <find>checkSense</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -82,7 +123,6 @@
         <option value="$PROJECT_DIR$/src/sass/base/_initial.scss" />
         <option value="$PROJECT_DIR$/src/components/ActionBlock.js" />
         <option value="$PROJECT_DIR$/src/components/Attributes.js" />
-        <option value="$PROJECT_DIR$/src/components/BaseStats.js" />
         <option value="$PROJECT_DIR$/src/sass/components/_attributes.scss" />
         <option value="$PROJECT_DIR$/src/sass/components/_additional-stats.scss" />
         <option value="$PROJECT_DIR$/src/sass/components/_stat-block.scss" />
@@ -100,6 +140,13 @@
         <option value="$PROJECT_DIR$/src/components/SubjectText.js" />
         <option value="$PROJECT_DIR$/src/components/SubjectCard.js" />
         <option value="$PROJECT_DIR$/src/components/Grid.js" />
+        <option value="$PROJECT_DIR$/src/components/Skills.js" />
+        <option value="$PROJECT_DIR$/src/components/BaseSpeed.js" />
+        <option value="$PROJECT_DIR$/src/components/DamageResistance.js" />
+        <option value="$PROJECT_DIR$/src/components/DamageImmunity.js" />
+        <option value="$PROJECT_DIR$/src/components/ConditionImmunity.js" />
+        <option value="$PROJECT_DIR$/src/components/Senses.js" />
+        <option value="$PROJECT_DIR$/src/components/BaseStats.js" />
       </list>
     </option>
   </component>
@@ -151,6 +198,7 @@
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
   </component>
   <component name="RunDashboard">
@@ -180,12 +228,12 @@
       <workItem from="1546900032199" duration="10717000" />
       <workItem from="1546931922311" duration="1080000" />
       <workItem from="1547322082369" duration="5668000" />
-      <workItem from="1547411218408" duration="2977000" />
+      <workItem from="1547411218408" duration="3860000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55392000" />
+    <option name="totallyTimeSpent" value="56275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -316,13 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BaseStats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="134" column="43" lean-forward="true" selection-start-line="134" selection-start-column="43" selection-end-line="134" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/components/_base-stats.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
@@ -431,13 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SubjectText.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/SubjectCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -448,10 +482,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SubjectText.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Grid.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="115" column="35" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Skills.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BaseSpeed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DamageResistance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DamageImmunity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ConditionImmunity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Senses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BaseStats.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

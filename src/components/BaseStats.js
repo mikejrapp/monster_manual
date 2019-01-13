@@ -1,111 +1,12 @@
 import React from "react";
+import BaseSpeed from "./BaseSpeed";
+import Skills from "./Skills";
+import DamageResistance from "./DamageResistance";
+import DamageImmunity from "./DamageImmunity";
+import ConditionImmunity from "./ConditionImmunity";
+import Senses from "./Senses";
 
 const BaseStats = (props) =>{
-    const checkSpeed = () => {
-        if(props.subject.baseStats.speed){
-            return(
-                <div className="base-speed-wrapper">{Object.keys(props.subject.baseStats.speed).map((surface) =>
-                    <div className="base-speed-item">
-                        {surface + " " + props.subject.baseStats.speed[surface] + " ft "}
-                    </div>
-                )}</div>
-            )
-        }
-    };
-
-    const checkSkills = () => {
-        if(props.subject.hasOwnProperty("skills") && Object.keys(props.subject.skills).length > 0){
-            return(
-                <div>
-                    <div className="base-stats-title-banner">
-                        <h4 className="base-stats-title">Skills</h4>
-                    </div>
-                    <div className="base-stats-wrapper">
-                        {Object.keys(props.subject.skills).map((skill) =>
-                            <p className="base-stats-throws"><span className="base-stats-throws-title">{skill}</span> +{props.subject.skills[skill]}</p>
-                        )}
-                    </div>
-                </div>
-            )
-        }
-    };
-
-    const checkDamageResistance = () => {
-        if(props.subject.damageResistances.length > 0){
-            return(
-                <div>
-                    <div className="base-stats-title-banner">
-                        <h4 className="base-stats-title">Damage Resistances</h4>
-                    </div>
-                    <div className="base-stats-wrapper">
-                        <p className="base-stats-resistances">
-                            {props.subject.damageResistances.map((resistance) =>
-                                <span className="base-stats-resistances-span">{resistance}</span>
-                            )}
-                        </p>
-                    </div>
-                </div>
-            )
-        }
-    };
-
-    const checkDamageImmunity = () => {
-        if(props.subject.damageImmunities.length > 0){
-            return(
-                <div>
-                    <div className="base-stats-title-banner">
-                        <h4 className="base-stats-title">Damage Immunities</h4>
-                    </div>
-                    <div className="base-stats-wrapper">
-                        <p className="base-stats-resistances">
-                            {props.subject.damageImmunities.map( (immunity) =>
-                                <span className="base-stats-resistances-span">{immunity}</span>
-                            )}
-                        </p>
-                    </div>
-                </div>
-            )
-        }
-    };
-
-    const checkConditionImmunity = () => {
-        if(props.subject.conditionImmunities.length > 0){
-            return(
-                <div>
-                    <div className="base-stats-title-banner">
-                        <h4 className="base-stats-title">Condition Immunities</h4>
-                    </div>
-                    <div className="base-stats-wrapper">
-                        <p className="base-stats-resistances">
-                            {props.subject.conditionImmunities.map((immunity) =>
-                                <span className="base-stats-resistances-span">{immunity}</span>
-                            )}
-                        </p>
-                    </div>
-                </div>
-            )
-        }
-    };
-
-    const checkSense = () => {
-        if(props.subject.senses.length > 0){
-            return(
-                <div>
-                    <div className="base-stats-title-banner">
-                        <h4 className="base-stats-title">Senses</h4>
-                    </div>
-                    <div className="base-stats-wrapper">
-                        <p className="base-stats-resistances">
-                            {props.subject.senses.map((sense) =>
-                                <span className="base-stats-resistances-span">{sense}</span>
-                            )}
-                        </p>
-                    </div>
-                </div>
-            )
-        }
-    };
-
     return (
         <div className={"base-stats"}>
 
@@ -131,12 +32,12 @@ const BaseStats = (props) =>{
                             <div className={"base-stats-icons_wrapper"}>
                                 <i className="fas fa-bolt fa-3x base-speed icon-full">
                                     <span className="base-speed-span">
-                                        {checkSpeed()}
+                                        <BaseSpeed subject={props.subject}/>
                                     </span>
                                 </i>
                                 <i className="fas fa-bolt fa-2x base-speed icon-small">
                                     <span className="base-speed-span">
-                                        {checkSpeed()}
+                                        <BaseSpeed subject={props.subject}/>
                                     </span>
                                 </i>
                             </div>
@@ -158,15 +59,15 @@ const BaseStats = (props) =>{
                             })}
                         </div>
 
-                        {checkSkills()}
+                        <Skills subject={props.subject}/>
 
-                        {checkDamageResistance()}
+                        <DamageResistance subject={props.subject}/>
 
-                        {checkDamageImmunity()}
+                        <DamageImmunity subject={props.subject}/>
 
-                        {checkConditionImmunity()}
+                        <ConditionImmunity subject={props.subject}/>
 
-                        {checkSense()}
+                        <Senses subject={props.subject}/>
 
                     </div>
                 </div>
