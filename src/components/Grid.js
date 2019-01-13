@@ -22,6 +22,7 @@ class Grid extends React.Component{
                                 type: result.type,
                                 size: result.size,
                                 alignment: result.alignment,
+                                challengeRating: result.challenge_rating,
                                 baseStats: {
                                     ac: result.armor_class,
                                     hp: result.hit_points,
@@ -71,6 +72,7 @@ class Grid extends React.Component{
                 type: null,
                 size: null,
                 alignment: null,
+                challengRating: null,
                 baseStats: {
                     ac: null,
                     hp: null,
@@ -111,7 +113,7 @@ class Grid extends React.Component{
             <div className={"grid"}>
                 <SubjectCard
                     subject={this.state.subject.name}
-                    subjectBody={this.state.subject.description}
+                    challengeRating={this.state.subject.challengeRating}
                 />
                 <StatBlock
                     subject={this.state.subject}

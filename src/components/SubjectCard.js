@@ -8,7 +8,7 @@ const SubjectCard = (props) =>{
             <SubjectImage/>
             <SubjectText
                 subject={props.subject}
-                subjectBody={props.subjectBody}
+                challengeRating={props.challengeRating}
             />
         </div>
     )
